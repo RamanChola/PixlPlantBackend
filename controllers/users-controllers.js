@@ -71,7 +71,7 @@ const signup = async (req, res) => {
     console.log(err);
   }
   const createdUser = new User({
-    username,
+    username:username.toLowerCase(),
     lastname,
     email,
     password: EncPass,
